@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+        }
+        header{
+            font-weight: 700;
+            font-size: 3rem;
+            padding-left: 40vw;
+            margin:2rem  1rem;
+           
+        }
+        section{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+         }
+         form{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: .3rem;
+         }
+         form input{
+            height: 1.5rem;
+            border:#fdcd3b;
+            padding: .5rem;
+         }
+         input:focus{
+            border: #5b5454;
+            outline-color: #ae9f9f;
+         }
+         form button{
+            font-weight: 600;
+            width: 200px;
+            margin: 10px 30%;
+            padding: 5px 0px;
+            background: #fdcd3b
+         }
+    </style>
+</head>
+<body>
+    <header>Login Now</header>
+    <section>
+        <form action="/login" method="post">
+            <label for="username">User Name:</label> 
+            <input type="text" placeholder="Username/Email" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="text" placeholder="Password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+</html>

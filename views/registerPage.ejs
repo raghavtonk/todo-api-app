@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+        }
+        header{
+            font-weight: 700;
+            font-size: 3rem;
+            padding-left: 40vw;
+            margin: 1rem;
+           
+        }
+        section{
+            display: flex;
+            justify-content: center;
+         }
+         form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            gap: .3rem;
+         }
+         form input{
+            height: 1.5rem;
+            border:#fdcd3b;
+            padding: .5rem;
+         }
+         input:focus{
+            border: #5b5454;
+            outline-color: #ae9f9f;
+         }
+         form button{
+           
+            width: 250px;
+            margin: 10px 30%;
+            padding: 5px 0px;
+            background: linear-gradient(110deg, #fdcd3b 93%, #ffed4b 7%);
+         }
+    </style>
+</head>
+<body>
+    <header>Register Now</header>
+    <section>
+        <form action="/register" method="post">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" name="name" required>
+            <label for="username">User Name:</label>
+            <input type="text" placeholder="Username" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="text" placeholder="Password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
